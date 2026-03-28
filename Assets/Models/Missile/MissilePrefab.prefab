@@ -289,8 +289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5baeda2507983451caaf2889c8cdcd9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HomingMissile
-  speed: 30
-  rotationSpeed: 1.5
+  speed: 32
+  rotationSpeed: 1.4
   targetTag: Player
   explosionPrefab: {fileID: 2124315621269976664, guid: dfaa1d033b08749399a1ae99d67b9ee0, type: 3}
 --- !u!1 &3626060937719896871
