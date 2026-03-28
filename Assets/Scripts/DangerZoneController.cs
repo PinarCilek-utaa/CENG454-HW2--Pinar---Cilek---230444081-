@@ -7,6 +7,7 @@ public class DangerZoneController : MonoBehaviour
     [Header("System References")]
     //This sensor needs to be connected to the FlightExamManager object in order to print text to the screen.
     [SerializeField] private FlightExamManager examManager;
+    [SerializeField] private MissileLauncher missileLauncher;
 
     [Header("Settings")]
     //We define these two variables so that they can be modified from the inspector.
@@ -55,6 +56,11 @@ public class DangerZoneController : MonoBehaviour
                 StopCoroutine(activeCountdown);
                 activeCountdown= null;
             }
+            //If the player escaped the danger zone, to destroy the missile:
+            if(missileLauncher != null)
+            {
+                missileLauncher.DestroyActiveMissile();
+            }
         }
     }
 
@@ -67,6 +73,10 @@ public class DangerZoneController : MonoBehaviour
         if (isPlayerInZone)
         {
             Debug.Log("You stayed there for more than 5 seconds! A missile is being launched!!");
+            if (missileLauncher != null)
+            {
+                missileLauncher.Launch();
+            }
 
         }
     }
