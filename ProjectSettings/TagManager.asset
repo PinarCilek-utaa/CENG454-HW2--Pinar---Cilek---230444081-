@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Missile
+  - LandingArea
+  - TakeoffArea
   layers:
   - Default
   - TransparentFX
