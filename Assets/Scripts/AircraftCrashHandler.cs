@@ -18,32 +18,6 @@ public class AircraftCrashHandler : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Terrain"))
         {
-            /*To apply an explosion effect when the aircraft crashes into any area labeled "terrain":
-            if (examManager != null && examManager.hasEnteredZone && !examManager.threatCleared)
-            {
-                Debug.Log("OH NO! THE PLANE CRASHED!");
-                if (explosionEffect !=null)
-                {
-                    Instantiate(explosionEffect, transform.position, transform.rotation);
-                }
-                //To save the camera and watch the explosion when the plane was destroyed:
-                if (Camera.main !=null)
-                {
-                    Camera.main.transform.SetParent(null);
-                }
-
-                //The mission will fail because the plane crashed.
-                if (examManager != null)
-                {
-                    examManager.UpdateHUD("CRITICAL FAILURE", "Aircraft Destroyed! Mission Failed.");
-                }
-                //destroy the plane:
-                Destroy(gameObject);
-            } 
-            else 
-            {
-                Debug.Log("Safe zone terrain contact.");
-            } */
             
             Debug.Log("You crashed terrain .Aircraft exploded!");
             Explode();

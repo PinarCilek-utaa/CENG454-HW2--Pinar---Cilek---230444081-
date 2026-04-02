@@ -20,7 +20,7 @@ public class LandingArea : MonoBehaviour
             else
             {
                 //If the aircraft failed to successfully clear the danger zone:
-                examManager.UpdateHUD("Landing Refused!", "You must survive the danger zone first!");
+                examManager.UpdateHUD("You must survive the danger zone first!", "Landing Refused!");
             }
         }
     }

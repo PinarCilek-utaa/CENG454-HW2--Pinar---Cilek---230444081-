@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-// System.Diagnostics kütüphanesi silindi!
 
 public class FlightExamManager : MonoBehaviour
 {
@@ -59,7 +58,7 @@ public class FlightExamManager : MonoBehaviour
         }
         else
         {
-            UpdateHUD("Landing Refused!", "You must survive the danger zone first!");
+            UpdateHUD("You must survive the danger zone first!", "Landing Refused!");
             Debug.Log("Error: You cannot land without entering the threat zone!");
         }
     }
