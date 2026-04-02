@@ -44,13 +44,10 @@ public class FlightController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            // İŞTE BÜYÜ BURADA: Uçağı ışınlamıyoruz, motor gücüyle (Force) ileri itiyoruz!
-            // Bu sayede karşısına bir engel (Pist veya Terrain) çıkarsa FİZİK KURALLARI gereği toslayıp kalır.
             rb.AddForce(transform.forward * thrustForce, ForceMode.Acceleration);
         }
         else
         {
-            // Space'i bırakınca uçağın havada buz pateni gibi kaymasını engellemek için yavaşça fren yaptırıyoruz
             rb.linearVelocity = Vector3.Lerp(rb.linearVelocity, Vector3.zero, Time.fixedDeltaTime * 2f);
         }
     }

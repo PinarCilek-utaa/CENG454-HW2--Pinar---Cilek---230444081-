@@ -6,7 +6,7 @@ using UnityEngine;
 public class HomingMissile : MonoBehaviour
 {
     [Header("Flight Settings")]
-    [SerializeField] private float speed=30f; //speed can be adjust
+    [SerializeField] private float speed=30f; //speed can be adjust in unity
     [SerializeField] private float rotationSpeed= 1.5f;
     [SerializeField] private string targetTag="Player";
 
